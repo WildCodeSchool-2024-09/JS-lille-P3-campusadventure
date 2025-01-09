@@ -1,13 +1,7 @@
 import { useEffect, useState } from "react";
 import "./AdminManagement.css";
-import EditUser from "./EditUser";
-
-type User = {
-  id: number;
-  username: string;
-  email: string;
-  password: string;
-};
+import EditUser from "../../../components/adminpage/EditUser";
+import type { User } from "../../../types/type";
 
 function AdminManagement() {
   const [users, setUsers] = useState<User[]>([]);

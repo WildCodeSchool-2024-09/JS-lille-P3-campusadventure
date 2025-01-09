@@ -1,8 +1,17 @@
+// import { useEffect, useState } from "react";
 import "./ProfilPage.css";
 import { useNavigate } from "react-router-dom";
+// import type { User } from "../../types/type";
 
 function ProfilPage() {
   const navigate = useNavigate();
+  // const [user, setUser] = useState<User[]>([]);
+
+  // useEffect(() => {
+  //   fetch(`${import.meta.env.VITE_API_URL}/api/users`)
+  //     .then((r) => r.json())
+  //     .then((data: User[]) => setUser(data));
+  // }, []);
 
   return (
     <div className="profil-page">

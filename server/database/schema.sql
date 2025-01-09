@@ -2,7 +2,9 @@ CREATE TABLE account (
   id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
   username VARCHAR(50) NOT NULL UNIQUE,
   email VARCHAR(100) NOT NULL UNIQUE,
-  password VARCHAR(100) NOT NULL
+  password VARCHAR(100) NOT NULL,
+  teacher1 VARCHAR(100) DEFAULT 'Fantine',
+  teacher2 VARCHAR(100) DEFAUT 'Soufiane'
 );
 
 CREATE TABLE room (
@@ -36,14 +38,14 @@ CREATE TABLE progress (
   CONSTRAINT fk_challenge FOREIGN KEY (challenge_id) REFERENCES challenge(id)
 );
 
-INSERT INTO account (username, email, password)
+INSERT INTO account (username, email, password, teacher1, teacher2)
 VALUES
-  ("admin", "admin@gmail.com", "admin"),
-  ("user1", "user1@gmail.com", "user1"),
-  ("user2", "user2@gmail.com", "user2"),
-  ("user3", "user3@gmail.com", "user3"),
-  ("user4", "user4@gmail.com", "user4"),
-  ("user5", "user5@gmail.com", "user5");
+  ("admin", "admin@gmail.com", "admin", "null", "null"),
+  ("user1", "user1@gmail.com", "user1", "null", "null"),
+  ("user2", "user2@gmail.com", "user2", "null", "null"),
+  ("user3", "user3@gmail.com", "user3", "null", "null"),
+  ("user4", "user4@gmail.com", "user4", "null", "null"),
+  ("user5", "user5@gmail.com", "user5", "null", "null");
   
 
 INSERT INTO room (boss_name, img_url)
