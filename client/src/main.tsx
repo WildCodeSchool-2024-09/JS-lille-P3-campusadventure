@@ -12,7 +12,6 @@ import AdminPage from "./components/adminpage/AdminPage";
 import ProfilPage from "./components/profilpage/ProfilPage";
 
 import Game from "./pages/game/Game";
-import HomePage from "./pages/home/HomePage";
 import AdminManagement from "./pages/profil/admin/AdminManagement";
 
 // Import additional components for new routes
@@ -30,10 +29,6 @@ const router = createBrowserRouter([
     path: "/", // The root path
     element: <App />, // Renders the App component for the home page
     children: [
-      {
-        path: "/welcome",
-        element: <HomePage />,
-      },
       {
         path: "/game",
         element: <Game />,

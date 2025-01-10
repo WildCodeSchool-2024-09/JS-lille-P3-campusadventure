@@ -31,4 +31,8 @@ router.get("/api/progress/:id", progressActions.read);
 
 /* ************************************************************************* */
 
+// Define Authentication-related routes
+
+/* ************************************************************************* */
+
 export default router;

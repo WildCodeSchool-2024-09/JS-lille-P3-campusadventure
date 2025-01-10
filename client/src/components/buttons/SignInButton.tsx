@@ -1,5 +1,3 @@
-import "./SignInButton.css";
-
 function SignInButton() {
   return (
     <>

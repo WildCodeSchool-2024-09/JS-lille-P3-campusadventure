@@ -1,5 +1,3 @@
-import "./SubscribeButton.css";
-
 function SubscribeButton() {
   return (
     <>
